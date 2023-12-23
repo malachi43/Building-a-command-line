@@ -1,0 +1,51 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FullStack Nodejs</title>
+  </head>
+  <style>
+    button {
+      color: white;
+      background: rgba(0, 0, 255, 0.5);
+      border: none;
+      outline: none;
+      margin: 10px;
+    }
+    input {
+      margin: 10px;
+    }
+    span,
+    h1 {
+      margin-left: 10px;
+    }
+  </style>
+  <body>
+    <h1>Register</h1>
+    <form action="http://localhost:1337/auth/register" method="POST">
+      <input type="text" name="username" placeholder="Enter your username" />
+      <br />
+      <input type="email" name="email" placeholder="Enter your active email" />
+      <br />
+      <input
+        type="password"
+        name="password"
+        placeholder="Enter your password"
+      />
+      <br />
+      <button type="submit">Register</button>
+    </form>
+    <span>Already have an account?</span> <a href="http://localhost:1337/auth/login"> Login </a>
+
+    <script>
+      // const url = "http://localhost:1337";
+      // fetch(`${url}/posts?limit=1&offset=1`)
+      //   .then((res) => {
+      //     return res.json()
+      //   })
+      //   .then((posts) => {
+      //    console.log(posts)
+      //   });
+    </script>
+  </body>
+</html>
